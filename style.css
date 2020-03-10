@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+header {
+    background-color: darkslategrey;
+    display: flex;
+
+}
+
+header h1 {
+    margin: auto;
+    flex-direction: row;
+    padding: 40px 20px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Josefin Sans';
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding: 60px 0;
+    border-bottom: solid darkslategrey;
+}
+
+.headline p {
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 30px;
+    color: darkslategrey;
+    font-family: 'Josefin Sans';
+}
+
+p {
+    font-family: 'Josefin Sans';
+    color: darkslategrey;
+    padding: 20px 5px;
+    font-size: 15px;
+}
+
+fieldset {
+    border: none;
+    width: 90%;
+}
+
+/* .top {
+    display: flex;
+} */
+
+.bottom {
+    width: 90%;
+    border-top: solid darkslategrey;
+    border-bottom: none;
+    padding: 2px 0;
+}
+
+.bottom fieldset {
+    width: 100%;
+}
+
+
+legend {
+        font-size: 30px;
+        color: darkslategrey;
+        font-family: 'Josefin Sans';
+        padding: 20px 0px;
+        margin-right: 60%;
+        position: absolute;
+}
+
+label {   
+    color: darkslategrey;
+    padding: 10px 0;
+    font-family: 'Josefin Sans';
+  }
+
+.bottom legend {
+    margin-right: 68%;
+    position: absolute;
+}
+
+
+.top input,
+.top select,
+textarea {
+  color: rgb(77, 77, 77);
+  font-weight: 200; 
+  width: 100%;
+  border: none;
+  padding: 20px;
+  outline: 0;
+  margin-bottom: 1em;
+  border-radius: .3em;
+  border-bottom: 3px solid rgba(0,0,0, 0.05);
+  background-color: #e8eeef;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+} 
+
+button {
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    font-weight: 600; 
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    height: auto;
+    padding: 20px;
+    outline: 0;
+    margin-bottom: 1em;
+    border-radius: .3em;
+    border-bottom: 3px solid rgba(0,0,0, 0.05);
+    background-color: #1e7e8f;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+}
+
+button:hover {
+    background-color: #29a5bb;
+}
+
+textarea:focus {
+    background-color: rgb(209, 209, 209)
+}
+
+.top input:focus {
+    border-color: darkslategrey;
+}
+
+
+
+
+@media (min-width: 768px) {
+
+    fieldset,
+    .headline {
+        border: none;
+        width: 50%;
+    }
+
+    .bottom {
+        width: 50%;
+    }
+
+    .headline {
+        border-bottom: solid darkslategrey;
+    }
+
+    .textbox {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .textbox label {
+        flex-basis: 9rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+}
+
