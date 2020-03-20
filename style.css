@@ -37,11 +37,12 @@ h2 {
     font-family: 'Josefin Sans';
 }
 
-p {
+.titles, p {
     font-family: 'Josefin Sans';
     color: darkslategrey;
-    padding: 20px 5px;
-    font-size: 15px;
+    padding: 30px 0px;
+    font-size: 18px;
+    display: block;
 }
 
 fieldset {
